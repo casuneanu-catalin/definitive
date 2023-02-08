@@ -1,0 +1,99 @@
+// Colors
+
+$primary: #191133;
+$secondary: #df6b73;
+$tertiary: #f4c85a;
+$white: #ffff;
+$black: #000;
+$blue: #58bcc9;
+
+$palettes: (
+  yellow: (
+    600: #eeab62,
+    500: #c9b858,
+    400: #f5cd59,
+    300: #f4c85a,
+  ),
+  pink: (
+    600: #e83759,
+    500: #f5597d,
+    400: #dc5e76,
+    300: #df6b73,
+  ),
+  green: (
+    600: #62c958,
+    500: #65f559,
+    400: #5edcac,
+  ),
+  purple: (
+    700: #2f2151,
+    600: #2f2151,
+    580: #3b2a64,
+    550: #4c3c71,
+    500: #413460,
+    400: #6b4662,
+    300: #746a8b,
+    200: #beb8cc,
+  ),
+);
+
+:root {
+  @each $colorname, $palette in $palettes {
+    @each $key, $value in $palette {
+      $keyname: '--palette-' + $colorname + '-' + $key;
+      #{$keyname}: #{$value};
+    }
+  }
+}
+
+// Typography
+
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-lora: 'Lora', serif;
+$font-family-changa: 'Changa', sans-serif;
+
+$font-size-base: 1rem;
+$font-size-xs: $font-size-base * 1.2;
+$font-size-sm: $font-size-base * 1.4;
+$font-size-md: $font-size-base * 1.6;
+$font-size-lg: $font-size-base * 1.8;
+
+$h1-font-size: $font-size-base * 3.4;
+$h2-font-size: $font-size-base * 2.4;
+$h3-font-size: $font-size-lg;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+$font-weight-base: $font-weight-regular;
+
+// Borders
+
+$border-radius: 2.8rem;
+$border-radius-sm: 0.5rem;
+$border-radius-md: 1rem;
+$border-radius-md-left: 1.5rem 0 0 1.5rem;
+$border-radius-md-right: 0 1.5rem 1.5rem 0;
+$border-radius-lg: 3.2rem;
+$border-radius-pill: 50rem;
+$border-radius-pill-left: 5rem 0 0 5rem;
+$border-radius-pill-right: 0 5rem 5rem 0;
+$border-radius-modal: 1.8rem;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+);

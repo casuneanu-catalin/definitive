@@ -1,0 +1,587 @@
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import "bootstrap/scss/bootstrap";
+@import "./variables.scss";
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $white;
+  font-family: $font-family-open-sans;
+  font-size: $font-size-md;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.center-left {
+  display: flex;
+  align-items: center;
+}
+
+// Typography
+
+p {
+  color: var(--palette-purple-200);
+}
+
+.fs-xs {
+  font-size: $font-size-xs;
+}
+
+.fs-sm {
+  font-size: $font-size-sm;
+}
+
+.fs-md {
+  font-size: $font-size-md;
+}
+
+.fs-lg {
+  font-size: $font-size-lg;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-family-changa;
+}
+
+h2,
+h3 {
+  font-weight: $font-weight-light;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+// Colors & Gradients
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-tertiary {
+  color: $tertiary;
+}
+
+.info-purple {
+  color: var(--palette-purple-200);
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--palette-yellow-400) 0%,
+    var(--palette-pink-400) 100%
+  );
+  border: linear-gradient(
+    90deg,
+    var(--palette-yellow-400) 0%,
+    var(--palette-pink-400) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pink-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--palette-pink-500) 0%,
+    var(--palette-pink-600) 100%
+  ) !important;
+  border: linear-gradient(
+    90deg,
+    var(--palette-pink-500) 0%,
+    var(--palette-pink-600) 100%
+  ) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.green-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--palette-green-500) 0%,
+    var(--palette-green-400) 100%
+  ) !important;
+  border: linear-gradient(
+    90deg,
+    var(--palette-green-500) 0%,
+    var(--palette-green-400) 100%
+  ) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yellow-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--palette-yellow-500) 0%,
+    var(--palette-yellow-400) 100%
+  ) !important;
+  border: linear-gradient(
+    90deg,
+    var(--palette-yellow-500) 0%,
+    var(--palette-yellow-400) 100%
+  ) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dash-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--palette-purple-500) 0%,
+    var(--palette-purple-400) 100%
+  ) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Buttons
+
+.upload-btn + label {
+  display: inline-block;
+  border-radius: $border-radius-md;
+  padding: 2rem;
+  background-color: var(--palette-purple-500);
+  border-color: var(--palette-purple-500);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-sm;
+  color: var(--palette-purple-300);
+}
+
+.upload-btn:focus + label,
+.upload-btn + label:hover {
+  border-color: var(--palette-purple-500);
+  opacity: 0.7;
+}
+
+.upload-btn {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+// general
+.btn-sm-yellow {
+  background-color: var(--palette-yellow-500);
+}
+
+.btn-sm-blue {
+  background-color: $blue;
+}
+
+.btn-sm-green {
+  background-color: var(--palette-green-600);
+}
+
+a {
+  color: var(--palette-purple-300);
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semi-bold;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.hero-btn,
+.second-btn {
+  border-radius: $border-radius-md;
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-md;
+  color: $white;
+  padding: 2rem;
+}
+
+.second-btn {
+  border: 0.3rem solid var(--palette-yellow-400);
+
+  &:hover {
+    border: 0.3rem solid var(--palette-yellow-400);
+  }
+}
+
+.clear-btn {
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(3rem);
+}
+
+// modal
+.modal-btn {
+  padding: 1rem !important;
+  color: var(--palette-purple-200) !important;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      var(--palette-yellow-400) 0%,
+      var(--palette-pink-400) 100%
+    );
+    border: linear-gradient(
+      90deg,
+      var(--palette-yellow-400) 0%,
+      var(--palette-pink-400) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white !important;
+  }
+  &-selected {
+    background: linear-gradient(
+      90deg,
+      var(--palette-yellow-400) 0%,
+      var(--palette-pink-400) 100%
+    );
+    border: linear-gradient(
+      90deg,
+      var(--palette-yellow-400) 0%,
+      var(--palette-pink-400) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white !important;
+  }
+}
+
+.modal-dropdown-btn {
+  background-color: var(--palette-purple-550);
+  border-color: var(--palette-purple-550);
+  border-radius: $border-radius-md;
+  font-size: $font-size-sm;
+  padding: 1rem 2rem;
+
+  &:hover {
+    background-color: rgb(76, 60, 113, 0.7);
+    border-color: var(--palette-purple-550);
+  }
+  &::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  background-color: $white;
+  color: var(--palette-purple-580);
+  font-weight: $font-weight-semi-bold;
+}
+
+.modal-btn-disabled {
+  background-color: var(--palette-purple-580);
+  border-color: var(--palette-purple-580);
+  color: var(--palette-purple-700);
+}
+
+// accordion
+.accordion-button {
+  color: $white;
+  background-color: transparent;
+  font-size: $h2-font-size;
+
+  &::after {
+    font-family: FontAwesome;
+    content: "\f0ab";
+    font-size: $font-size-lg;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: $white;
+  background-color: transparent;
+  font-size: $h2-font-size;
+}
+
+// dashboard
+.dash-btn {
+  white-space: nowrap;
+  border-radius: $border-radius-md !important;
+  color: $white;
+  backdrop-filter: blur(3rem);
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semi-bold;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  min-width: 97px;
+}
+
+.dash-btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: $font-size-xs;
+  min-width: 123px;
+}
+
+.dash-btn-w {
+  width: 11.6rem;
+}
+
+// Navbar
+
+.navbar {
+  background-color: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(3rem);
+  z-index: 3;
+  padding: 2rem 10rem;
+  margin-bottom: 6rem;
+
+  .navbar-brand {
+    color: $white;
+  }
+
+  li {
+    font-size: $h3-font-size;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Accordion
+
+.accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: transparent;
+}
+
+// Boxes & Forms
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.main-box {
+  position: relative;
+  z-index: 10;
+  background-color: var(--palette-purple-600);
+  border-radius: $border-radius;
+  padding: 5rem 3rem 4rem 3rem;
+
+  .form-box {
+    border-radius: $border-radius-md;
+    padding: 2rem;
+    background-color: var(--palette-purple-500);
+    border-color: var(--palette-purple-500);
+    font-weight: $font-weight-medium;
+    font-size: $font-size-sm;
+    color: var(--palette-purple-300);
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--palette-purple-300);
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--palette-purple-300);
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--palette-purple-300);
+  }
+}
+
+.form-check {
+  color: var(--palette-purple-300);
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semi-bold;
+}
+
+.form-check-input {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--palette-purple-500);
+  border-color: var(--palette-purple-500);
+
+  &:focus {
+    border-color: var(--palette-purple-200);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(190, 184, 204, 25%);
+  }
+}
+.model-info-box {
+  background-color: var(--palette-purple-580);
+  border-radius: $border-radius-modal;
+  padding: 2rem;
+}
+
+.link-box {
+  background-color: var(--palette-purple-550);
+  border-radius: $border-radius-modal;
+  padding: 1rem 2rem;
+  min-height: 10rem;
+}
+
+//Icons
+
+.step-icon {
+  font-family: $font-family-changa;
+  font-size: $h2-font-size;
+  border-radius: $border-radius-lg;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.hero-step {
+  background: linear-gradient(
+    90deg,
+    var(--palette-yellow-400) 0%,
+    var(--palette-pink-400) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.next-step {
+  color: var(--palette-purple-200);
+  border: 0.3rem solid var(--palette-purple-200);
+}
+
+.w-40 {
+  width: 4rem;
+}
+
+// Dashboard
+
+.table-row {
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(3rem);
+  padding: 1rem;
+  font-weight: $font-weight-regular;
+}
+
+.table > :not(caption) > * > * {
+  padding: 1rem 0.5rem;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 0.7rem;
+
+  img {
+    width: 40px;
+  }
+  thead {
+    color: var(--palette-yellow-400);
+    tr {
+      :first-child {
+        border-radius: $border-radius-pill-left;
+        padding-left: 2rem;
+      }
+      :last-child {
+        border-radius: $border-radius-pill-right;
+      }
+    }
+  }
+
+  tbody {
+    color: $white;
+
+    tr {
+      min-height: 5.3rem;
+
+      :first-child {
+        border-radius: $border-radius-md-left;
+        margin-left: 1rem;
+      }
+      :last-child {
+        border-radius: $border-radius-md-right;
+      }
+    }
+
+    td {
+      vertical-align: middle;
+    }
+  }
+}
+
+// Modal
+
+.modal {
+  .modal-content {
+    background-color: transparent;
+    border: none;
+
+    .dropdown-menu {
+      background-color: $white;
+      border-color: $white;
+
+      .dropdown-item {
+        color: var(--palette-purple-580);
+        font-weight: $font-weight-semi-bold;
+      }
+    }
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: none;
+  }
+
+  p {
+    word-wrap: break-word;
+    width: 80%;
+  }
+}
+
+.auth {
+  min-height: 100vh;
+}

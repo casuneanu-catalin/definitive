@@ -1,0 +1,35 @@
+{
+  "entrypoints": {
+    "dashboard_app": {
+      "js": [
+        "/build/runtime.59b1dfec.js",
+        "/build/467.b43241d6.js",
+        "/build/981.6aae80c4.js",
+        "/build/dashboard_app.ba857726.js"
+      ],
+      "css": [
+        "/build/dashboard_app.e28e143a.css"
+      ]
+    },
+    "admin_app": {
+      "js": [
+        "/build/runtime.59b1dfec.js",
+        "/build/467.b43241d6.js",
+        "/build/924.c9ea9fe4.js",
+        "/build/admin_app.2948421b.js"
+      ],
+      "css": [
+        "/build/admin_app.0b200a5a.css"
+      ]
+    },
+    "landing_page": {
+      "js": [
+        "/build/runtime.59b1dfec.js",
+        "/build/landing_page.249fdef8.js"
+      ],
+      "css": [
+        "/build/landing_page.0049efa5.css"
+      ]
+    }
+  }
+}

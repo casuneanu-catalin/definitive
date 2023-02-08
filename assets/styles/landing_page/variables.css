@@ -1,0 +1,22 @@
+:root {
+  --palette-yellow-600: #eeab62;
+  --palette-yellow-500: #c9b858;
+  --palette-yellow-400: #f5cd59;
+  --palette-yellow-300: #f4c85a;
+  --palette-pink-600: #e83759;
+  --palette-pink-500: #f5597d;
+  --palette-pink-400: #dc5e76;
+  --palette-pink-300: #df6b73;
+  --palette-green-600: #62c958;
+  --palette-green-500: #65f559;
+  --palette-green-400: #5edcac;
+  --palette-purple-800: #0b061a;
+  --palette-purple-700: #2f2151;
+  --palette-purple-600: #2f2151;
+  --palette-purple-580: #3b2a64;
+  --palette-purple-550: #4c3c71;
+  --palette-purple-500: #413460;
+  --palette-purple-400: #6b4662;
+  --palette-purple-300: #746a8b;
+  --palette-purple-200: #beb8cc;
+}/*# sourceMappingURL=variables.css.map */
